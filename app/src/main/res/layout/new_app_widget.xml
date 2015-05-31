@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/widget_margin"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <FrameLayout
+            android:foreground="@drawable/press"
+            android:id="@+id/refresh"
+            android:padding="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_autorenew_black_48dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:foreground="@drawable/press"
+            android:id="@+id/change_color"
+            android:layout_toLeftOf="@id/refresh"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+            <ImageView
+                android:id="@+id/circle_color"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_settings_black_48dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"></ImageView>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/nobita"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/nobita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_marginLeft="6dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/deep_orange"
+            android:text="Do it ..."
+            android:layout_toRightOf="@id/nobita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:background="#999"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></TextView>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:textColor="@color/deep_orange"
+            android:text="phrasal verbs"
+            android:id="@+id/appwidget_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/appwidget_meaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
