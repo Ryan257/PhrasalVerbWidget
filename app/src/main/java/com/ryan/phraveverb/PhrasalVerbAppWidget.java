@@ -76,7 +76,7 @@ public class PhrasalVerbAppWidget extends AppWidgetProvider {
         super.onDisabled(context);
     }
 
-    public static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
+    static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {
         RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.new_app_widget);
 
